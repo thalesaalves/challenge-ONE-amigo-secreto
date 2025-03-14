@@ -15,6 +15,7 @@ function adicionarAmigo() {
 
     if (nome === ""){
         mensagemErro.innerHTML = 'Por favor digite um nome!';
+        resultado.innerHTML = '';
         return;
     }
 
@@ -39,6 +40,7 @@ function atualizarLista() {
 function sortearAmigo() {
     if (amigos.length < 2) {
         mensagemErro.innerHTML = 'Adicione pelo menos 2 amigos para que o sorteio seja realizado!';
+        resultado.innerHTML = '';
         return;
     }
 
